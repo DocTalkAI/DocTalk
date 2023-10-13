@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1004739149042",
+    "firebase_url": "https://doctalkai-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "doctalkai",
+    "storage_bucket": "doctalkai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004739149042:android:aca701fd6539f1b21b246b",
+        "android_client_info": {
+          "package_name": "com.example.doctalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATdBwrtNkPEvixSrrPrfsykUCXGrF1xjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
