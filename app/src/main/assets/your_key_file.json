@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "doctalkai-401920",
+  "private_key_id": "399e8403b7b51795c16422b05233fa7adeb0b030",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQKXITJtBBQlbM\njOhjzoZi/yzfcWEsEaAdPzzBNpCahK3rEUeuPndUm8B1f5KPZJFEjdP24mfyxXcx\nevaZqL9aLJDVupzQ/kvSEgXQ8Ogu++/XrqcPViWEqHAD2XUmoS3yPgQOeti9172z\ngGrDcuwr/ozxWtp3mXngIzzV5nJT53S0EdDqsYUSa1zLb3AoNeI0OciiZRI83UOc\nDgbF/NMS87r84LxCzhUG1RFieyJqsNDaWPxHeLSwLhRsc+qW4zf7C2YxUZGzFx8i\nop91EYK7+5hbH83JygHfuKX17JuzNHDF3SpvDio7cFxoaiWG3cidjAUwlcfNxwlu\n7jBvvUIPAgMBAAECggEAUto8Ol03hNIHxFDNanRYTuzsCl+RYr39McbqwqiaM7Zd\nlvOAyVy5mGaJ2vqU9hf8LgIZfOmuoBVylLIxlwVwbE7Ssw8cvZ6JxSpBQGGyuIi0\ndO9iNRt/wWZdd1rFY0PCCuoeKTlCLYXCTsDtPa/vSq99n88ep33h4ZGE9EpN9RCy\nBBtdOQ7dBuwM6loEV3sMq18cpBMH1AATlvVmMSvZ/kCRGvMbf1NJ/fnfPPMymyme\nmTHpuCKp6TDP+n+gMRaJOyRQJO/4BotmM82mtFrc9gDoWKCsjxPVNNe5tDXTq1tT\n5RnIKbiEZnEmHd2Eog6gUg5vV4PpLn5//GmjP6EF2QKBgQDy/5kQ7ZmB11vO5loD\nw+wytDpokO7Qe6/iyc6ATSlok+a5DpFAoEGVL7I2QP0JAiaOe9SNW7uliz8gwhth\nl5t63SCYM7nVNx9OZ/wYuxARVTkt26FYNgRS3Kky11GyUjGe2+UHShDFWp/EEHlX\naQ39FmbeA33N1uYtQ9/BSbk7SwKBgQDbTK8lZzFfECSgbgAcOb1w5tdh/+/uwbfM\nxBEh+GYEVzM/3MfMjrn8BmbsnIb8P0oRWYlcXKpN1AJhy7y4X1zV+qPdobtfG7AW\nOHVfV7jTWN0vc4pNk9jMdRS0ZMA51TgtNcQ6Y5tSJL4PhoMRs0cFv4J9oPdE5Axc\ncF31/b71zQKBgQDct93IyoiMr5jsrb9FfEinJZ2ILV0+cZqpXLT9RRk/rFf974Vw\nNiBb6h7tuModzJ5I/aFrZM9k5r5Iewdz9cl8KC7bEODTEmaVSU5rCD7n/4kYZk5/\nWVFEErp9O6cxWgdITGQT4uqo2FAWPwB4rSvPnvGA55r1xST+KJCteNGPUQKBgFcq\nPr+OKbiQUQ6XSmHtrVev2VIxiWuMAgNYtzqaYeo9wrgSiDPNUy1SWhyYBqtCeK02\nuntEtchjiWLXuTZLaTn/+pwASdp+xdm/LR/tXSBcROY0dXdqWZTCwK0HEsSp9D88\nDLfsmXLn+cdv/q7NZGBrg3FtxnrSbftcCmzZI8rNAoGATsVDaMkpzPuf+Skl0SuI\n+aAABtguotXvFdchswO0MzGka9gijuNuPLh26lVJLEbRvV6E6kflQ7qVGZaX04cB\nPFGGji8barHMoaj/1toCdkH1unXQrPYQqIsbvE7E16Y9CB2ZJ2QpmpSk/SShEqaS\nW0QMYMq7SvTwxavywh+EzOg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "doctalkai@doctalkai-401920.iam.gserviceaccount.com",
+  "client_id": "108440957598379400963",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/doctalkai%40doctalkai-401920.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
