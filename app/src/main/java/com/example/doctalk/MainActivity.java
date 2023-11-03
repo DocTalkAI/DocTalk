@@ -141,67 +141,11 @@ public class MainActivity extends AppCompatActivity {
                     // Audio file uploaded successfully
                     Toast.makeText(this, "Audio uploaded to Firebase", Toast.LENGTH_SHORT).show();
 
-                    // Perform speech-to-text and redirect to TranscriptionActivity
-                    performSpeechToText(audioRef);
                 })
                 .addOnFailureListener(e -> {
                     // Handle upload failure, e.g., display an error message
                     Toast.makeText(this, "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
-    }
-
-    private void performSpeechToText(StorageReference audioRef) {
-        try {
-            // Load the JSON key file from the "assets" folder
-            InputStream inputStream = getAssets().open("your_key_file.json");
-
-            // Create GoogleCredentials from the input stream
-            credentials = GoogleCredentials.fromStream(inputStream);
-
-            // Initialize the Speech client using the loaded credentials
-            speechClient = SpeechClient.create(
-                    SpeechSettings.newBuilder()
-                            .setCredentialsProvider(FixedCredentialsProvider.create(credentials))
-                            .build()
-            );
-
-            // Create a Google Cloud Storage URI for the uploaded audio file
-            String gcsUri = "gs://" + audioRef.getBucket() + "/" + audioRef.getName();
-
-            // Configure the recognition request
-            RecognitionConfig config = RecognitionConfig.newBuilder()
-                    .setEncoding(RecognitionConfig.AudioEncoding.LINEAR16)
-                    .setSampleRateHertz(16000) // Adjust sample rate as needed
-                    .setLanguageCode("en-US") // Set the language code
-                    .build();
-
-            RecognitionAudio audio = RecognitionAudio.newBuilder().setUri(gcsUri).build();
-
-            // Perform STT
-            RecognizeRequest request = RecognizeRequest.newBuilder().setConfig(config).setAudio(audio).build();
-            RecognizeResponse response = speechClient.recognize(request);
-
-            // Process the STT results
-            List<SpeechRecognitionResult> results = ((RecognizeResponse) response).getResultsList();
-
-            if (results.size() > 0) {
-                String transcription = results.get(0).getAlternatives(0).getTranscript();
-                Toast.makeText(this, "STT Result: " + transcription, Toast.LENGTH_SHORT).show();
-
-                // Create an Intent to start the TranscriptionActivity
-                Intent intent = new Intent(this, TranscriptionActivity.class);
-                intent.putExtra("transcription", transcription); // Pass the transcribed text as an extra
-                startActivity(intent);
-
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            // Close the Speech client in a finally block
-            if (speechClient != null) {
-                speechClient.close();
-            }
-        }
     }
 
 
